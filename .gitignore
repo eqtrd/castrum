@@ -1,4 +1,3 @@
-
 # Root Dir.
 .DS_Store
 .editorconfig
@@ -6,7 +5,7 @@
 node_modules
 
 
-#Public Dir.
+# Public Dir.
 
 /public/kirby
 /public/media
