@@ -1,0 +1,16 @@
+
+# Root Dir.
+.DS_Store
+.editorconfig
+.idea
+node_modules
+
+
+#Public Dir.
+
+/public/kirby
+/public/media
+/public/vendor
+/public/site/sessions
+/public/site/accounts
+/public/site/config/.license
