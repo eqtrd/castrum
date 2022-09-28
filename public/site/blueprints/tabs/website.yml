@@ -1,0 +1,7 @@
+label: WEBSITE
+icon: globe
+columns:
+  left:
+    width: 2/3
+    sections:
+      pages: sections/pages

@@ -27,7 +27,8 @@
     "bnomei/kirby3-janitor": "^2.16",
     "sylvainjule/backups": "^1.0",
     "medienbaecker/autoresize": "^2.1",
-    "schnti/cachebuster": "^1.0"
+    "schnti/cachebuster": "^1.0",
+    "k-community/markdown-field": "^2.0"
   },
   "config": {
     "vendor-dir": "public/vendor",

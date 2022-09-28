@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb0c2e54d3d46f7240bb1e14b44d4a5e",
+    "content-hash": "08db1c1f7c828ec68854f7a8b243a4f8",
     "packages": [
         {
             "name": "bnomei/kirby3-janitor",
@@ -353,6 +353,56 @@
                 }
             ],
             "time": "2020-12-28T12:54:39+00:00"
+        },
+        {
+            "name": "k-community/markdown-field",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabianmichael/kirby-markdown-field.git",
+                "reference": "38eecd85216524f78fde9ee6f47e9267d2306a3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/38eecd85216524f78fde9ee6f47e9267d2306a3e",
+                "reference": "38eecd85216524f78fde9ee6f47e9267d2306a3e",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/cms": ">=3.6.0",
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.0.0"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "markdown-field"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                },
+                {
+                    "name": "Fabian Michael",
+                    "email": "hallo@fabianmichael.de"
+                }
+            ],
+            "description": "Enhanced markdown editor for Kirby 3",
+            "support": {
+                "issues": "https://github.com/fabianmichael/kirby-markdown-field/issues",
+                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/2.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabianmichael",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-25T19:18:48+00:00"
         },
         {
             "name": "laminas/laminas-escaper",

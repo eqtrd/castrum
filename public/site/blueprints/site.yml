@@ -1,5 +1,5 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+tabs:
+  site: tabs/website
+  seo: tabs/seo
