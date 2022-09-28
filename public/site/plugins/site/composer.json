@@ -1,10 +1,11 @@
 {
     "name": "eqtrd/site",
-    "description": "custom methods for kirby",
+    "description": "Custom Methods for Kirby",
     "license": "MIT",
     "authors": [
         {
-            "name": "Élie Quintard"
+            "name": "Élie Quintard",
+            "email": "elie.quintard@gmail.com"
         }
     ],
     "require": {}
