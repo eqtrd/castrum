@@ -1,0 +1,38 @@
+label: SEO & SETTINGS
+icon: search
+columns:
+  left:
+    width: 2/3
+    sections:
+      seoA:
+        type: fields
+        fields:
+          descriptionSEO:
+            type: markdown
+            buttons: false
+            size: two-lines
+            label: SEO Description
+            maxlength: 300
+            help: "Description text for Google"
+
+  right:
+    width: 1/3
+    sections:
+      favicon:
+        type: files
+        template: favicon
+        help: "Image size 512×512px"
+        max: 1
+        image:
+          back: white
+      sitelogo:
+        headline: Site Logo
+        type: files
+        max: 1
+        template: sitelogo
+        help: ".svg image is recommanded"
+        image:
+          back: white
+
+
+
