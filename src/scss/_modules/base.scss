@@ -1,0 +1,31 @@
+
+.welcome{
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  .site-logo{
+    height: 2em;
+    width: auto;
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Book';
+  src:
+          url('../fonts/SuisseIntl-Book.woff2') format('woff2'),
+          url('../fonts/SuisseIntl-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{
+  font-family: "SuisseIntl-Book";
+}
+
+.image-container{
+  background-color: rgba(244,244,244,0.6);
+  padding: 0 20%;
+}

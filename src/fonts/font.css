@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SuisseIntl-Book';
+    src: local('SuisseIntl-Book ﾦ'),
+         local('SuisseIntl-Book'),
+         url('SuisseIntl-Book.woff2') format('woff2'),
+         url('SuisseIntl-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

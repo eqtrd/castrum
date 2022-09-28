@@ -1,0 +1,17 @@
+body{
+  opacity: 0;
+}
+
+body.loaded{
+  opacity: 1;
+  transition: $transition-duration-default $transition-timing-default $transition-delay-default;
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity $transition-duration-default;
+}
