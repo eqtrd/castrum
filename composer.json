@@ -26,7 +26,8 @@
     "getkirby/cms": "^3.7.5",
     "bnomei/kirby3-janitor": "^2.16",
     "sylvainjule/backups": "^1.0",
-    "solaris/php-moon-phase": "^2.1"
+    "medienbaecker/autoresize": "^2.1",
+    "schnti/cachebuster": "^1.0"
   },
   "config": {
     "vendor-dir": "public/vendor",
