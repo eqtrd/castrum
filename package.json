@@ -4,7 +4,11 @@
   "description": "A fresh kirby starterkit working with Composer/Npm and webpack",
   "main": "index.js",
   "scripts": {
-    "test": "php -S localhost:8888 -t public public/kirby/router.php"
+    "test": "php -S localhost:8888 -t public public/kirby/router.php",
+    "dir": "node test.js",
+    "dev": "webpack-dev-server --mode development",
+    "build": "rm -rf ./www/assets && webpack --mode=production",
+    "watch": "mix watch --hot"
   },
   "author": "eqtrd",
   "license": "MIT",
@@ -16,7 +20,9 @@
     "converter-webfont": "^1.0.0",
     "css-loader": "^6.5.1",
     "fantasticon": "^1.2.3",
+    "laravel-mix": "^6.0.49",
     "mini-css-extract-plugin": "^2.5.1",
+    "path": "^0.12.7",
     "postcss-loader": "^6.2.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
