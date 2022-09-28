@@ -6,8 +6,7 @@ return [
     },
 
     'favicon' => function ($size) {
-        if ($this->images()->template("sitelogo")->isNotEmpty()): $favicon = $this->images()->template("favicon")->first(); endif;
+        if ($this->images()->template("sitelogo")->isNotEmpty()): $favicon = $this->images()->template("favicon")->first();  return $favicon->resize($size)->url(); endif;
 
-        return $favicon->resize($size)->url();
     },
 ];
