@@ -1,8 +1,8 @@
 {
-  "name": "k-community/markdown-field",
-  "description": "Enhanced markdown editor for Kirby 3",
+  "name": "fabianmichael/kirby-markdown-field",
+  "description": "Super-sophisticated markdown editor for Kirby 3",
   "type": "kirby-plugin",
-  "version": "2.0.2",
+  "version": "2.1.1",
   "license": "MIT",
   "authors": [
     {
