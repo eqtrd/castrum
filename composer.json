@@ -23,12 +23,12 @@
   },
   "require": {
     "php": ">=7.4.0 <8.2.0",
-    "getkirby/cms": "^3.7.5",
     "bnomei/kirby3-janitor": "^2.16",
     "sylvainjule/backups": "^1.0",
     "medienbaecker/autoresize": "^2.1",
-    "schnti/cachebuster": "^1.0",
-    "k-community/markdown-field": "^2.0"
+    "k-community/markdown-field": "^2.0",
+    "getkirby/cms": "^3.8",
+    "schnti/cachebuster": "^1.0"
   },
   "config": {
     "vendor-dir": "public/vendor",
@@ -37,7 +37,7 @@
     }
   },
   "extra": {
-    "kirby-cms-path": "public/kirby",
+    "kirby-cms-path": false,
     "kirby-plugin-path": "public/site/plugins"
   },
   "scripts": {
