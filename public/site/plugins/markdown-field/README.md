@@ -57,7 +57,7 @@ Enhanced, extensible Markdown field for Kirby CMS. Now available in version 2!
 This version of the plugin requires PHP 8.0 and Kirby 3.6.0 or higher. The recommended way of installing is by using Composer:
 
 ```
-$ composer require k-community/markdown-field
+$ composer require fabianmichael/kirby-markdown-field
 ```
 
 Alternatively, download and copy this repository to `/site/plugins/markdown-field`
@@ -284,7 +284,7 @@ npm run build
 
 ## 8. Known Issues
 
-- **Kirbytags:** In some edge-cases with nested parenthesis or nested Kirbytags, the highlighting can differ from how Kirby parses the markup. This should’nt not be an issue for most daily use-cases. You can also not have multiple consecutive line breaks within Kirbytags, or the highlighter will fail. This is because of the way of how Markdown makes a clear separation between block and inline elements.
+- **Kirbytags:** In some edge-cases with nested parenthesis or nested Kirbytags, the highlighting can differ from how Kirby parses the markup. This shouldn’t not be an issue for most daily use-cases. You can also not have multiple consecutive line breaks within Kirbytags, or the highlighter will fail. This is because of the way of how Markdown makes a clear separation between block and inline elements.
 - **Kirbytags in HTML blocks** are not highlighted, because CodeMirror uses its own HTML Parser for that, which deactivates all Markdown highlighting within these. Parsedown Extra supports the `markdown="1"` attribute on HTML block-level elements, which is not supported by CodeMirror’s Markdown parser.
 - **Inline Format toggling:** The selection will sometimes in unexpected ways, when dealing with very complex re-formatting. Solving this would need a more sophisticated selection/caret-tracking during all transformations. IMHO, it still works better than in most other Markdown editors and does not lead to data-loss, so ¯\\\_(ツ)\_/¯.
 
