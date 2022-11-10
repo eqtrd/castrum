@@ -2,35 +2,48 @@
 
 return [
 
-  'panel' => ['css' => 'assets/css/panel.css'],
+    'panel' => ['css' => 'assets/css/panel.css'],
+    'debug' => false,
+    'updates' => [
+        'plugins' => [
+            'eqtrd/*' => false,
+        ]
+    ],
 
-  'debug' => false,
+    'email' => [
+        'transport' => [
+            'type' => 'smtp',
+            'host' => 'localhost',
+            'port' => 1025,
+            'security' => false
+        ]
+    ],
 
-  // 'cache' => [
-  //   'pages' => [
-  //     'active' => true
-  //   ]
-  // ],
+    // 'cache' => [
+    //   'pages' => [
+    //     'active' => true
+    //   ]
+    // ],
 
-  // 'bnomei.robots-txt.sitemap' => './sitemap.xml',
-  // 'bnomei.robots-txt.groups' => [ 
-  //     '*' => [
-  //         'disallow' => [
-  //             '/kirby/',
-  //             '/site/',
-  //         ],
-  //         'allow' => [
-  //             '/media/',
-  //         ]
-  //     ]
-  // ],
+    // 'bnomei.robots-txt.sitemap' => './sitemap.xml',
+    // 'bnomei.robots-txt.groups' => [
+    //     '*' => [
+    //         'disallow' => [
+    //             '/kirby/',
+    //             '/site/',
+    //         ],
+    //         'allow' => [
+    //             '/media/',
+    //         ]
+    //     ]
+    // ],
 
-  'omz13.xmlsitemap' => [
-    'cacheTTL' => 0,
-  ],
+    'omz13.xmlsitemap' => [
+        'cacheTTL' => 0,
+    ],
 
-  'smartypants' => true,
-  'medienbaecker.autoresize.maxWidth' => 2500,
-  'schnti.cachebuster.active' => true,
+    'smartypants' => true,
+    'medienbaecker.autoresize.maxWidth' => 2500,
+    'schnti.cachebuster.active' => true,
 
 ];
