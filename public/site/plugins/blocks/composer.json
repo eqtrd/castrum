@@ -1,0 +1,12 @@
+{
+    "name": "eqtrd/blocks",
+    "description": "Custom Blocks for Kirby",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Élie Quintard",
+            "email": "elie.quintard@gmail.com"
+        }
+    ],
+    "require": {}
+}
