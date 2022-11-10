@@ -1,0 +1,15 @@
+type: markdown
+font: sans
+buttons:
+  headlines:
+    - h1
+    - h2
+    - h3
+  - italic
+  link:
+    blank: true
+    - pagelink
+    - email
+
+
+
