@@ -18,7 +18,7 @@ return [
 
         $classes = implode(" ", $classes);
 
-        return "<picture class='".$size." ".$classes."'>
+        return "<picture class='thumb-".$size." ".$classes."'>
                  <source srcset='".$this->thumb($size."-webp")->url()."' type='image/webp'>
                  <source srcset='".$this->thumb($size."-avif")->url()."' type='image/avif'>
                  <img src='".$this->thumb($size."-jpeg")->url()."' alt='".$this->filename()."'>
