@@ -16,12 +16,26 @@ return [
     },
     'picture' => function ($size = null, $classes = null){
 
+        if(in_array("lazyload", $classes)){
+            $lazyload = true;
+        }else{
+            $lazyload = false;
+        }
         $classes = implode(" ", $classes);
 
-        return "<picture class='thumb-".$size." ".$classes."'>
+        if ($lazyload == true){
+
+            return "<picture class='thumb-".$size." ".$classes."'>
+                 <source data-srcset='".$this->thumb($size."-webp")->url()."' type='image/webp'>
+                 <source data-srcset='".$this->thumb($size."-avif")->url()."' type='image/avif'>
+                 <img class='lazyload' data-src='".$this->thumb($size."-jpeg")->url()."' alt='".$this->filename()."'>
+                 </picture>";
+        }else{
+            return "<picture class='thumb-".$size." ".$classes."'>
                  <source srcset='".$this->thumb($size."-webp")->url()."' type='image/webp'>
                  <source srcset='".$this->thumb($size."-avif")->url()."' type='image/avif'>
                  <img src='".$this->thumb($size."-jpeg")->url()."' alt='".$this->filename()."'>
                  </picture>";
-    }
+        }
+    },
 ];
