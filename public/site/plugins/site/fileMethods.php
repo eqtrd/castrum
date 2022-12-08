@@ -1,41 +1,38 @@
 <?php
 
-return [
+return array(
     'customOrientation' => function () {
-       /* if ($this->descriptionSEO()->isNotEmpty()) return $this->descriptionSEO()->smartypants();
-        return $this->site()->descriptionSEO()->smartypants();*/
+        /* if ($this->descriptionSEO()->isNotEmpty()) return $this->descriptionSEO()->smartypants();
+         return $this->site()->descriptionSEO()->smartypants();*/
     },
-    'imgOptim' => function($class){
+    'imgOptim'          => function ($class) {
         $image = $this;
-        return "<picture class='".$class."'>
-                 <source srcset='".$image->thumb(['format' => 'webp'])->url()."' type='image/webp'>
-                 <source srcset='".$image->thumb(['format' => 'avif'])->url()."' type='image/avif'>
-                 <img src='".$image->thumb(['format' => 'jpeg'])->url()."' alt='".$image->filename()."'>
+        return "<picture class='" . $class . "'>
+                 <source srcset='" . $image->thumb(array('format' => 'webp'))->url() . "' type='image/webp'>
+                 <source srcset='" . $image->thumb(array('format' => 'avif'))->url() . "' type='image/avif'>
+                 <img src='" . $image->thumb(array('format' => 'jpeg'))->url() . "' alt='" . $image->filename() . "'>
                  </picture>";
 
     },
-    'picture' => function ($size = null, $classes = null){
+    'picture' => function ($size = null, $lazy = null, $classes = []){
 
-        if(in_array("lazyload", $classes)){
-            $lazyload = true;
-        }else{
-            $lazyload = false;
-        }
+
         $classes = implode(" ", $classes);
 
-        if ($lazyload == true){
 
-            return "<picture class='thumb-".$size." ".$classes."'>
+        if ($lazy){
+
+            return "<picture class='thumb-".$size." ".$this->orientation()." ".$classes."'>
                  <source data-srcset='".$this->thumb($size."-webp")->url()."' type='image/webp'>
                  <source data-srcset='".$this->thumb($size."-avif")->url()."' type='image/avif'>
                  <img class='lazyload' data-src='".$this->thumb($size."-jpeg")->url()."' alt='".$this->filename()."'>
                  </picture>";
         }else{
-            return "<picture class='thumb-".$size." ".$classes."'>
+            return "<picture class='thumb-".$size."'>
                  <source srcset='".$this->thumb($size."-webp")->url()."' type='image/webp'>
                  <source srcset='".$this->thumb($size."-avif")->url()."' type='image/avif'>
                  <img src='".$this->thumb($size."-jpeg")->url()."' alt='".$this->filename()."'>
                  </picture>";
         }
     },
-];
+);
