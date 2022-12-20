@@ -20,6 +20,7 @@
     "converter-webfont": "^1.0.0",
     "css-loader": "^6.5.1",
     "fantasticon": "^1.2.3",
+    "fontconvert-tool": "^1.1.2",
     "laravel-mix": "^6.0.49",
     "mini-css-extract-plugin": "^2.5.1",
     "path": "^0.12.7",
