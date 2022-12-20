@@ -8,6 +8,7 @@
     "dir": "node test.js",
     "dev": "webpack-dev-server --mode development",
     "build": "rm -rf ./www/assets && webpack --mode=production",
+    "fonts": "node .config/fonts.config.js",
     "watch": "mix watch --hot"
   },
   "author": "eqtrd",
