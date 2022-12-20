@@ -102,7 +102,7 @@ const commonConfig = {
       filename: "./css/bundle.css",
     }),
     new BrowserSyncPlugin({
-      host: "localhost",
+      host: "dev.local",
       watch: false,
       port: 3000,
       codeSync: false,
