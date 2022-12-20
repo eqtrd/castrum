@@ -1,3 +1,21 @@
-body{
-  background: lightgrey;
-}
+// GLOBAL SCSS
+
+// IMPORT LIBRARIES
+@import "_lib/_normalize.scss"; // Normalize.css - CSS Reset
+
+
+//IMPORT CONFIG
+@import "_config/config"; // Initial values
+@import "_config/functions"; // Initial functions
+@import "_config/root"; // Initial root
+
+// IMPORTS ICONS
+
+// IMPORT PARTIALS
+@import "_partials/_base"; // Initiate basic elements
+@import "_partials/_fonts"; // Initiate fonts
+@import "_partials/_margins"; // Initiate margins and padding
+@import "_partials/_lazysizes.scss"; // Initiate lazysizes
+
+// IMPORT MODULES
+// Add here the scss files for the website
