@@ -28,7 +28,8 @@
     "medienbaecker/autoresize": "^2.1",
     "k-community/markdown-field": "^2.0",
     "getkirby/cms": "^3.8",
-    "schnti/cachebuster": "^1.0"
+    "schnti/cachebuster": "^1.0",
+    "lukaskleinschmidt/kirby-terminal": "^1.0"
   },
   "config": {
     "vendor-dir": "public/vendor",

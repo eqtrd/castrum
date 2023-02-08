@@ -1,0 +1,23 @@
+{
+    "name": "lukaskleinschmidt/kirby-terminal",
+    "description": "",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lukas Kleinschmidt",
+            "email": "kleinschmidt@eatersvz.de"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LukasKleinschmidt\\Terminal\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
