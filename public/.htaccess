@@ -8,6 +8,7 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
+# get assets with timestamps
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.+)\.(\d+)\.(js|css)$ $1.$3 [L]
 
