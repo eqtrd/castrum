@@ -9,7 +9,7 @@ return array(
 
         if ($lazy){
 
-            return "<picture class='thumb-".$size." ".$this->orientation()." ".$classes."'>
+            return "<picture class='thumb-".$size." ".$this->customOrientation()." ".$classes."'>
                  <source data-srcset='".$this->thumb($size."-webp")->url()."' type='image/webp'>
                  <source data-srcset='".$this->thumb($size."-avif")->url()."' type='image/avif'>
                  <img class='lazyload' data-src='".$this->thumb($size."-jpeg")->url()."' alt='".$this->filename()."'>
