@@ -1,19 +1,6 @@
 <?php
 
 return array(
-    'customOrientation' => function () {
-        /* if ($this->descriptionSEO()->isNotEmpty()) return $this->descriptionSEO()->smartypants();
-         return $this->site()->descriptionSEO()->smartypants();*/
-    },
-    'imgOptim'          => function ($class) {
-        $image = $this;
-        return "<picture class='" . $class . "'>
-                 <source srcset='" . $image->thumb(array('format' => 'webp'))->url() . "' type='image/webp'>
-                 <source srcset='" . $image->thumb(array('format' => 'avif'))->url() . "' type='image/avif'>
-                 <img src='" . $image->thumb(array('format' => 'jpeg'))->url() . "' alt='" . $image->filename() . "'>
-                 </picture>";
-
-    },
     'picture' => function ($size = null, $lazy = null, $classes = []){
 
 
@@ -34,5 +21,21 @@ return array(
                  <img src='".$this->thumb($size."-jpeg")->url()."' alt='".$this->filename()."'>
                  </picture>";
         }
+    },
+    'customOrientation' => function(){
+        $file = $this;
+        $width = $file->width();
+        $height = $file->height();
+        $ratio = 5/6;
+
+        if($width < $height && $width > $height * $ratio){
+            $orientation = "square";
+        }elseif ($width > $height && $height > $width * $ratio){
+            $orientation = "square";
+        }else{
+            $orientation = $this->orientation();
+        }
+
+        return $orientation;
     },
 );
