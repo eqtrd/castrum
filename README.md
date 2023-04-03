@@ -8,8 +8,6 @@ git remote rm origin
 git remote add origin https://github.com/eqtrd/REPOSITORY.git
 
 ### Init Project
-npm install
-npm udpate
+npm install && npm update
 
-composer install
-composer update
+composer install && composer update
