@@ -3,6 +3,8 @@
 .editorconfig
 .idea
 node_modules
+composer.lock
+package-lock.json
 
 
 # Public Dir.
@@ -11,5 +13,11 @@ node_modules
 /public/media
 /public/vendor
 /public/site/sessions
+/public/site/cache
+/public/site/backups
 /public/site/accounts
 /public/site/config/.license
+
+# Assets Dir.
+
+/assets/*
