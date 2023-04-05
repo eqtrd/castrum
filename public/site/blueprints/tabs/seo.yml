@@ -8,7 +8,7 @@ columns:
         type: fields
         fields:
           descriptionSEO:
-            type: markdown
+            extends: fields/markdown
             buttons: false
             size: two-lines
             label: SEO Description
