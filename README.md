@@ -11,3 +11,8 @@ git remote add origin https://github.com/eqtrd/REPOSITORY.git
 npm install && npm update
 
 composer install && composer update
+
+### Update Gitignore
+git rm -r --cached .
+
+git add .
