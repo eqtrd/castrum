@@ -5,8 +5,12 @@ return [
 // __________________________________________________________ //
 // DEFAULT
 
-    'panel' => ['css' => 'assets/css/panel.css'],
+    'panel'        => [
+        'css' => 'assets/css/panel.css',
+        'js'  => 'assets/js/panel.js',
+    ],
     'debug' => false,
+
 
 // __________________________________________________________ //
 // UPDATES

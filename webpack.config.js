@@ -7,23 +7,23 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const commonConfig = {
   context: path.resolve(__dirname, "./src/"),
   entry: {
-    'index': "./js/index.js",
-/*    'admin-panel': './src/admin-panel-css.css', // (another css file)*/
+    'bundle': ["./js/index.js", "./scss/application.scss"],
+    'panel': ["./js/panel.js", "./scss/_panel/panel.scss"],
   },
   output: {
     path: path.resolve(__dirname, "./public/assets/"),
     publicPath: "/assets/",
-    filename: "./js/bundle.js",
+    filename: "./js/[name].js",
     assetModuleFilename: "./",
   },
   devServer: {
-      hot: true,
-   /* server:{
-      type: 'https',
-      options: {
-        requestCert: true,
-      },
-    },*/
+    hot: true,
+    /* server:{
+       type: 'https',
+       options: {
+         requestCert: true,
+       },
+     },*/
     watchFiles: ['www/site/*.php'],
     static: {
       directory: path.resolve('./public'),
@@ -99,7 +99,7 @@ const commonConfig = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./css/bundle.css",
+      filename: "./css/[name].css",
     }),
     new BrowserSyncPlugin({
       host: "dev.local",

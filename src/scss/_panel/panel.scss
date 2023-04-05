@@ -1,0 +1,42 @@
+// This file is for Panel Custom css
+// It has to be build before you can see changes
+
+
+// __________________________________________________________ //
+// RESET PANEL STYLE
+
+.k-headline-field{
+  padding-top: 0;
+}
+.k-headline[data-size=large]{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: var(--font-bold);
+  border-bottom: var(--field-input-border);
+  &:before{
+    content: none !important;
+  }
+}
+
+*[data-disabled="true"]{
+  opacity: 0.75;
+}
+
+
+// __________________________________________________________ //
+// SITE SETTINGS
+
+.k-registration {
+  display: none !important;
+}
+
+.k-system-info {
+  a:first-of-type {
+    display: none;
+  }
+}
+
+
+// __________________________________________________________ //
+// CUSTOM CSS HERE
+
