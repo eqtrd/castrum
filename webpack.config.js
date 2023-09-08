@@ -28,7 +28,7 @@ const commonConfig = {
     static: {
       directory: path.resolve('./public'),
       watch: {
-        ignored: ['**/*.json','**/*.sess'],
+        ignored: ['**/*.json','**/*.sess', '**/*.jpg', '**/*.webp','**/*.png', '**/*.gif'],
       },
     },
     allowedHosts: [
