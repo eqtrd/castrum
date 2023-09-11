@@ -65,5 +65,5 @@
 
 
 </head>
-<body>
+<body id="<?= $page->uid()?>" data-template="<?= $page->template()?>">
 <main class="main">
