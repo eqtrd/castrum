@@ -8,16 +8,17 @@ package-lock.json
 
 
 # Public Dir.
+/public/content
 
 /public/kirby
 /public/media
 /public/vendor
 /public/site/sessions
+/public/site/plugins
 /public/site/cache
 /public/site/backups
 /public/site/accounts
 /public/site/config/.license
 
 # Assets Dir.
-
-/assets/*
+public/assets/*
