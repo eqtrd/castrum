@@ -7,7 +7,8 @@
     "test": "php -S localhost:8888 -t public public/kirby/router.php",
     "dev": "webpack-dev-server --mode development",
     "build": "rm -rf ./www/assets && webpack --mode=production",
-    "fonts": "node .config/fonts.config.js"
+    "fonts": "node .config/fonts.config.js",
+    "iconfont": "fantasticon ./src/icons -o ./src/fonts/icons --config .config/icons.config.js"
   },
   "author": "eqtrd",
   "license": "MIT",
