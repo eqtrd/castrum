@@ -18,4 +18,4 @@ jobs:
           server: ftp.cluster027.hosting.ovh.net
           username: eliequinjn
           password: uDSSYpDrdcre
-          protocol: ftps
+          protocol: ftp
