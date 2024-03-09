@@ -20,3 +20,4 @@ jobs:
           password: uDSSYpDrdcre
           protocol: ftp
           server-dir: github_deploy/
+          local-dir: public/
