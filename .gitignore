@@ -10,6 +10,7 @@ package-lock.json
 # Public Dir.
 /public/content
 
+/public/assets
 /public/kirby
 /public/media
 /public/vendor
@@ -20,5 +21,3 @@ package-lock.json
 /public/site/accounts
 /public/site/config/.license
 
-# Assets Dir.
-public/assets/*
