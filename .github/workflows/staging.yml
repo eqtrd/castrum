@@ -19,4 +19,4 @@ jobs:
           username: eliequinjn
           password: uDSSYpDrdcre
           protocol: ftp
-          server-dir: github_deploy
+          server-dir: github_deploy/
