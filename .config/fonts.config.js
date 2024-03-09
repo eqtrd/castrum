@@ -8,5 +8,5 @@ fontconvert.convertFonts('./src/fonts', './src/fonts', [], {
         'Basic Latin', 'Latin-1 Supplement', // Latin
         'General Punctuation', 'Currency Symbols' // Punctuation
     ],
-    outTypes: ['woff', 'woff2'],
+    outTypes: ['woff', 'woff2', 'otf', 'svg'],
 });
