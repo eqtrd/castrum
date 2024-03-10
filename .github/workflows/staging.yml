@@ -16,13 +16,20 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Cache Node modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+      - name: Cache node modules
+          uses: actions/cache@v2
+          env:
+            cache-name: cache-node-modules
+          with:
+            # Chemin vers le dossier de cache
+            path: ~/.npm
+            # Clé pour le cache, incluant le hash du fichier package-lock.json ou yarn.lock
+            key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+            # Restaurer le cache en se basant sur la clé exacte ou sur la dernière clé ayant 'build-' comme préfixe
+            restore-keys: |
+              ${{ runner.os }}-build-${{ env.cache-name }}-
+              ${{ runner.os }}-build-
+              ${{ runner.os }}-
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
