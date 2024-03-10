@@ -3,8 +3,6 @@
 .editorconfig
 .idea
 node_modules
-composer.lock
-package-lock.json
 
 
 # Public Dir.
