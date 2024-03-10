@@ -33,7 +33,7 @@
     "webpack-dev-server": "^4.7.4",
     "webpack-hot-middleware": "^2.25.1",
     "webpack-livereload-plugin": "^3.0.2",
-    "webpack-merge": "^4.2.2",
+    "webpack-merge": "^4.2.2"
   },
   "browserslist": [
     "edge >= 16",
