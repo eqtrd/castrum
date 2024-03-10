@@ -1,23 +1,39 @@
 name: Staging Deployment
+
 on:
   push:
     branches: [ master ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
+
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '21.7' # Ajustez selon la version de Node.js que vous utilisez
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build assets
+        run: npm run build # Assurez-vous que ce script est défini dans votre package.json pour lancer Webpack
+
+      # L'étape de déploiement FTP reste inchangée
       - name: FTP Deployment
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ftp.cluster027.hosting.ovh.net
           username: eliequinjn
-          password: uDSSYpDrdcre
+          password: uDSSYpDrdcre # Pensez à sécuriser vos secrets
           protocol: ftp
-          server-dir: github_deploy/
+          server-dir: kirby-eqtrd-starter/
           local-dir: public/
