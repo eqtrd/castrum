@@ -31,14 +31,6 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Check Cache
-          run: |
-            if [ -d node_modules ]; then
-              echo "Cache hit, node_modules exists."
-            else
-              echo "Cache miss, node_modules does not exist."
-            fi
-            
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
