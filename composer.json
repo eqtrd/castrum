@@ -25,11 +25,9 @@
     "php": ">=8.0",
     "bnomei/kirby3-janitor": "^4.0",
     "sylvainjule/backups": "^1.0",
-    "medienbaecker/autoresize": "^2.1",
     "k-community/markdown-field": "^2.0",
     "getkirby/cms": "^4",
     "schnti/cachebuster": "^1.0",
-    "lukaskleinschmidt/kirby-terminal": "^1.0",
     "getkirby/cli": "^1.5"
   },
   "config": {
