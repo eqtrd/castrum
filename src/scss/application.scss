@@ -17,7 +17,11 @@
 @import "_partials/_margins"; // Initiate margins and padding
 @import "_partials/_lazysizes.scss"; // Initiate lazysizes
 
-// IMPORT MODULES
-// Add here the scss files for the website
-
+// IMPORT BASE MODULE
 @import './_modules/base';
+
+// IMPORT COMPONENTS
+/*@import './_modules/components/';*/
+
+// IMPORT TEMPLATES
+/*@import './_modules/templates/';*/
