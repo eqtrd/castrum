@@ -1,53 +1,53 @@
-name: Staging Deployment
-
-on:
-  push:
-    branches: [ master ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Cache node modules
-        uses: actions/cache@v4
-        env:
-          cache-name: cache-node-modules
-        with:
-          # Chemin vers le dossier de cache
-          path: node_modules
-          # Clé pour le cache, incluant le hash du fichier package-lock.json ou yarn.lock
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          # Restaurer le cache en se basant sur la clé exacte ou sur la dernière clé ayant 'build-' comme préfixe
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '21' # Ajustez selon la version de Node.js que vous utilisez
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build assets
-        run: npm run build # Assurez-vous que ce script est défini dans votre package.json pour lancer Webpack
-
-      - name: FTP Deployment
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
-        with:
-          server: ftp.cluster027.hosting.ovh.net
-          username: eliequinjn
-          password: uDSSYpDrdcre
-          protocol: ftp
-          server-dir: kirby-eqtrd-starter/
-          local-dir: public/
+#name: Staging Deployment
+#
+#on:
+#  push:
+#    branches: [ master ]
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    defaults:
+#      run:
+#        shell: bash
+#
+#    steps:
+#      - uses: actions/checkout@v4
+#        with:
+#          fetch-depth: 2
+#
+#      - name: Cache node modules
+#        uses: actions/cache@v4
+#        env:
+#          cache-name: cache-node-modules
+#        with:
+#          # Chemin vers le dossier de cache
+#          path: node_modules
+#          # Clé pour le cache, incluant le hash du fichier package-lock.json ou yarn.lock
+#          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+#          # Restaurer le cache en se basant sur la clé exacte ou sur la dernière clé ayant 'build-' comme préfixe
+#          restore-keys: |
+#            ${{ runner.os }}-build-${{ env.cache-name }}-
+#            ${{ runner.os }}-build-
+#            ${{ runner.os }}-
+#
+#      - name: Set up Node.js
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version: '21' # Ajustez selon la version de Node.js que vous utilisez
+#
+#      - name: Install dependencies
+#        run: npm install
+#
+#      - name: Build assets
+#        run: npm run build # Assurez-vous que ce script est défini dans votre package.json pour lancer Webpack
+#
+#      - name: FTP Deployment
+#        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+#        with:
+#          server: ftp.cluster027.hosting.ovh.net
+#          username: eliequinjn
+#          password: uDSSYpDrdcre
+#          protocol: ftp
+#          server-dir: kirby-eqtrd-starter/
+#          local-dir: public/
