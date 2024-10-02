@@ -48,6 +48,11 @@ a {
   color: var(--color-link);
   text-decoration: none;
   cursor: pointer;
+  @include notouch{
+    &:hover{
+      color: var(--color-hover);
+    }
+  }
 }
 
 ul,
