@@ -38,5 +38,20 @@
 
 
 // __________________________________________________________ //
-// CUSTOM CSS HERE
+// SITE TABS
 
+.k-tabs-tab{
+  font-weight: var(--font-semi);
+  .k-button-icon .k-icon{
+    color: unset;
+  }
+}
+.k-tabs-tab a[aria-current='true']{
+  color: black;
+  &:after{
+    content: none;
+  }
+}
+
+// __________________________________________________________ //
+// CUSTOM CSS HERE
