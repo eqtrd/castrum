@@ -21,7 +21,7 @@ columns:
       favicon:
         type: files
         template: favicon
-        help: "Image size 512×512px"
+        help: ".png image size 512×512px"
         max: 1
         image:
           back: white

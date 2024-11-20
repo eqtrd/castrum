@@ -1,0 +1,6 @@
+title: Right Column Files Section
+
+type: files
+label: Other Files
+multiple: true
+template: file

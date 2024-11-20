@@ -1,0 +1,6 @@
+title: Right Column GIF Section
+
+type: files
+label: Animated GIF
+multiple: true
+template: gif

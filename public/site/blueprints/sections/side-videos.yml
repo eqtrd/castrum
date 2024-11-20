@@ -1,0 +1,6 @@
+title: Right Column Videos Section
+
+type: files
+label: Videos
+multiple: true
+template: video

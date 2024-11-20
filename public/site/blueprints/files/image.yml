@@ -1,2 +1,11 @@
 title: Image
-accept: image/jpeg, image/png, image/gif
+accept:
+  extension: jpg, png
+  maxsize: 10485760
+
+create:
+  width: 2500
+  height: 2500
+
+
+fields:

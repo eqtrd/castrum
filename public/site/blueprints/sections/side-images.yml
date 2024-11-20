@@ -1,0 +1,6 @@
+title: Right Column Images Section
+
+type: files
+label: Images
+multiple: true
+template: image
