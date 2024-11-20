@@ -1,0 +1,43 @@
+label: INFO
+icon: info
+columns:
+  left:
+    width: 2/3
+    sections:
+      info:
+        type: fields
+        fields:
+          info:
+            label: Global Info
+            type: info
+            text: |
+              <big><strong>Uploading files</strong></big>
+
+              For SEO purposes, files must be named correctly using the name of your website.
+              for example: website-title-sunflower.jpg
+
+              - Uploading images:
+              Images must be uploaded to the images section located in the right column.
+              Images must be uploaded at a minimum size of 2500px wide and 2500px high.
+              The upload format must be JPG or PNG (for transparency management).
+              For colorimetric purposes, images must be saved for the web with an sRGB color profile.
+              Animated GIFs must be added to the GIF section.
+              <br>
+              - Uploading videos
+              Videos must be uploaded to the videos section located in the right column.
+              The upload format for videos must be h264 (mp4)
+              <br>
+              - Uploading Files
+              Other files (audio, PDF, etc.) must be uploaded to the files section located in the right column.
+              <br>
+
+
+
+
+
+
+
+
+
+
+
