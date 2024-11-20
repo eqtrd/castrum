@@ -8,7 +8,7 @@ columns:
         type: fields
         fields:
           info:
-            label: Global Info
+            label: 
             type: info
             text: |
               <big><strong>Uploading files</strong></big>
@@ -16,20 +16,38 @@ columns:
               For SEO purposes, files must be named correctly using the name of your website.
               for example: website-title-sunflower.jpg
 
-              - Uploading images:
+              - <strong>Uploading images</strong>
               Images must be uploaded to the images section located in the right column.
               Images must be uploaded at a minimum size of 2500px wide and 2500px high.
               The upload format must be JPG or PNG (for transparency management).
               For colorimetric purposes, images must be saved for the web with an sRGB color profile.
               Animated GIFs must be added to the GIF section.
               <br>
-              - Uploading videos
+              - <strong>Uploading videos</strong>
               Videos must be uploaded to the videos section located in the right column.
               The upload format for videos must be h264 (mp4)
               <br>
-              - Uploading Files
+              - <strong>Uploading Files</strong>
               Other files (audio, PDF, etc.) must be uploaded to the files section located in the right column.
               <br>
+
+              <big><strong>Uploading text</strong></big>
+
+              Please make sure not to copy/paste styled text, use raw text instead.
+              Do not use br, p, strong, span tags tags unless you have been advised to.
+
+              - <strong>Tips</strong>
+              Alt + Space insert a non breaking space (use it carefully).
+              Shift + Enter insert a line break.      (use it carefully).
+
+              <big><strong>Saving & Publishing</strong></big>
+
+              Make sure to save your changes Cmd + S or click on the "Save" button in the top right corner.
+              Make sure all necessary fields have been filled out before publishing your page.
+              Unfilled fields can lead to website issues.
+
+
+
 
 
 
