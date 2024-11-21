@@ -8,7 +8,7 @@ columns:
         type: fields
         fields:
           info:
-            label: 
+            label:
             type: info
             text: |
               <big><strong>Uploading files</strong></big>
@@ -29,7 +29,7 @@ columns:
               <br>
               - <strong>Uploading Files</strong>
               Other files (audio, PDF, etc.) must be uploaded to the files section located in the right column.
-              <br>
+              Font files must be uploaded in .woff or .woff2
 
               <big><strong>Uploading text</strong></big>
 
@@ -40,11 +40,12 @@ columns:
               Alt + Space insert a non breaking space (use it carefully).
               Shift + Enter insert a line break.      (use it carefully).
 
-              <big><strong>Saving & Publishing</strong></big>
+              <big><strong>Saving & publishing</strong></big>
 
               Make sure to save your changes Cmd + S or click on the "Save" button in the top right corner.
               Make sure all necessary fields have been filled out before publishing your page.
               Unfilled fields can lead to website issues.
+              <br>
 
 
 
