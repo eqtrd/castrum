@@ -13,7 +13,9 @@ node_modules
 /public/media
 /public/vendor
 /public/site/sessions
-/public/site/plugins
+/public/site/plugins/*
+!public/site/plugins/data-api/
+!public/site/plugins/site/
 /public/site/cache
 /public/site/backups
 /public/site/accounts
