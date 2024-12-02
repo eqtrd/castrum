@@ -1,10 +1,12 @@
+@use "../_config/config";
+
 body{
   opacity: 0;
 }
 
 body.loaded{
   opacity: 1;
-  transition: $transition-duration-default $transition-timing-default $transition-delay-default;
+  transition: config.$transition-duration-default config.$transition-timing-default config.$transition-delay-default;
 }
 
 .lazyload,
@@ -13,5 +15,5 @@ body.loaded{
 }
 .lazyloaded {
   opacity: 1;
-  transition: opacity $transition-duration-default;
+  transition: opacity config.$transition-duration-default;
 }

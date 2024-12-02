@@ -1,11 +1,14 @@
+@use "config";
+@use "functions";
+
 :root {
-  @each $size, $value in $margin {
+  @each $size, $value in config.$margin {
     --margin-#{$size}: calc(var(--base-space) * #{$value});
   }
 
-  @each $size, $item in $fontsize {
+  @each $size, $item in config.$fontsize {
     @each $screen, $values in $item {
-      @include mq($screen) {
+      @include functions.mq($screen) {
         @each $type, $value in $values {
           --#{$type}-#{$size}: #{$value};
         }

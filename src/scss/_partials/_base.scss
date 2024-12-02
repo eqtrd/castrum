@@ -1,3 +1,5 @@
+@use "../_config/functions";
+
 // BORDER-BOX, RESET
 
 html {
@@ -34,8 +36,8 @@ html {
 
 html,
 body {
-  @include font;
-  @include fs;
+  @include functions.font;
+  @include functions.fs;
   color: var(--color-text);
   background-color: var(--color-bg);
 }
@@ -48,7 +50,7 @@ a {
   color: var(--color-link);
   text-decoration: none;
   cursor: pointer;
-  @include notouch{
+  @include functions.notouch{
     &:hover{
       color: var(--color-hover);
     }

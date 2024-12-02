@@ -1,6 +1,10 @@
-@mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
-  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
-    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+@use "sass:map";
+@use "sass:string";
+@use "config";
+
+@mixin mq($mq-breakpoint, $mq-breakpoints: config.$breakpoints) {
+  @if map.has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map.get($mq-breakpoints, $mq-breakpoint);
   }
   @media screen and (min-width: #{$mq-breakpoint}) {
     @content;
@@ -8,10 +12,10 @@
 }
 
 @mixin transition(
-  $property: $transition-property-default,
-  $duration: $transition-duration-default,
-  $timing: $transition-timing-default,
-  $delay: $transition-delay-default
+  $property: config.$transition-property-default,
+  $duration: config.$transition-duration-default,
+  $timing: config.$transition-timing-default,
+  $delay: config.$transition-delay-default
 ) {
   transition-property: $property;
   transition-duration: $duration;
@@ -26,7 +30,7 @@
 }
 
 @mixin font($font: main) {
-  font-family: map-get(map-get($fonts, $font), name), unquote(map-get(map-get($fonts, $font), fallback));
+  font-family: map.get(map.get(config.$fonts, $font), name), string.unquote(map.get(map.get(config.$fonts, $font), fallback));
 }
 
 @mixin touch {

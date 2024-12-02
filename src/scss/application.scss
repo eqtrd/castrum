@@ -1,24 +1,24 @@
 // GLOBAL SCSS
 
 // IMPORT LIBRARIES
-@import "_lib/_normalize.scss"; // Normalize.css - CSS Reset
+@use "_lib/_normalize.scss"; // Normalize.css - CSS Reset
 
 
 //IMPORT CONFIG
-@import "_config/config"; // Initial values
-@import "_config/functions"; // Initial functions
-@import "_config/root"; // Initial root
+@use "_config/config"; // Initial values
+@use "_config/functions"; // Initial functions
+@use "_config/root"; // Initial root
 
 // IMPORTS ICONS
 
 // IMPORT PARTIALS
-@import "_partials/_base"; // Initiate basic elements
-@import "_partials/_fonts"; // Initiate fonts
-@import "_partials/_margins"; // Initiate margins and padding
-@import "_partials/_lazysizes.scss"; // Initiate lazysizes
+@use "_partials/_base"; // Initiate basic elements
+@use "_partials/_fonts"; // Initiate fonts
+@use "_partials/_margins"; // Initiate margins and padding
+@use "_partials/_lazysizes.scss"; // Initiate lazysizes
 
 // IMPORT BASE MODULE
-@import './_modules/base';
+@use '_modules/base' as base2;
 
 // IMPORT COMPONENTS
 /*@import './_modules/components/';*/
