@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44532de0e6b776503d5ffc7a70fd6099",
+    "content-hash": "c9de82b0709b1fa8bde6949c7f4c9637",
     "packages": [
         {
             "name": "bnomei/kirby3-janitor",
@@ -291,6 +291,63 @@
                 }
             ],
             "time": "2024-07-12T11:35:52+00:00"
+        },
+        {
+            "name": "fabianmichael/kirby-markdown-field",
+            "version": "3.0.0-alpha.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabianmichael/kirby-markdown-field.git",
+                "reference": "800fe5241abf85bd7309e982cdf0d4deea0b79ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/800fe5241abf85bd7309e982cdf0d4deea0b79ec",
+                "reference": "800fe5241abf85bd7309e982cdf0d4deea0b79ec",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^9",
+                "vimeo/psalm": "^5.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "markdown-field",
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                },
+                {
+                    "name": "Fabian Michael",
+                    "email": "hallo@fabianmichael.de"
+                }
+            ],
+            "description": "Super-sophisticated markdown editor for Kirby 4",
+            "homepage": "https://github.com/fabianmichael/kirby-markdown-field",
+            "support": {
+                "issues": "https://github.com/fabianmichael/kirby-markdown-field/issues",
+                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/3.0.0-alpha.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabianmichael",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-30T09:05:03+00:00"
         },
         {
             "name": "filp/whoops",
@@ -903,55 +960,6 @@
                 }
             ],
             "time": "2024-07-18T11:15:46+00:00"
-        },
-        {
-            "name": "k-community/markdown-field",
-            "version": "2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fabianmichael/kirby-markdown-field.git",
-                "reference": "d0b6e572ac5172ec91bac8dc9b41b4dcf2620815"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fabianmichael/kirby-markdown-field/zipball/d0b6e572ac5172ec91bac8dc9b41b4dcf2620815",
-                "reference": "d0b6e572ac5172ec91bac8dc9b41b4dcf2620815",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.2",
-                "php": ">=8.0.0"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "installer-name": "markdown-field"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sylvain Julé",
-                    "email": "contact@sylvain-jule.fr"
-                },
-                {
-                    "name": "Fabian Michael",
-                    "email": "hallo@fabianmichael.de"
-                }
-            ],
-            "description": "Super-sophisticated markdown editor for Kirby 3",
-            "support": {
-                "issues": "https://github.com/fabianmichael/kirby-markdown-field/issues",
-                "source": "https://github.com/fabianmichael/kirby-markdown-field/tree/2.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/fabianmichael",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-06-30T08:14:59+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -2196,7 +2204,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fabianmichael/kirby-markdown-field": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
