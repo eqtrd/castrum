@@ -28,7 +28,9 @@
     "getkirby/cms": "^4",
     "schnti/cachebuster": "^1.0",
     "getkirby/cli": "^1.5",
-    "fabianmichael/kirby-markdown-field": "3.0.0-alpha.2"
+    "fabianmichael/kirby-markdown-field": "3.0.0-alpha.2",
+    "junohamburg/kirby-reload-on-save": "^1.0",
+    "junohamburg/kirby-language-selector": "^1.1"
   },
   "config": {
     "vendor-dir": "public/vendor",
