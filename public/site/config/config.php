@@ -97,9 +97,15 @@ return [
     ],
 
     'smartypants' => true,
-    'medienbaecker.autoresize.maxWidth' => 2500,
-    'medienbaecker.autoresize.maxHeight' => 2500,
     'schnti.cachebuster.active' => true,
+
+    'ready' => function ($kirby) {
+        return [
+            'junohamburg.reload-on-save' => [
+                'active' => $kirby->user() !== null
+            ]
+        ];
+    }
 
 
 ];
