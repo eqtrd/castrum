@@ -40,6 +40,12 @@ columns:
               Alt + Space insert a non breaking space (use it carefully).
               Shift + Enter insert a line break.      (use it carefully).
 
+               <big><strong>Content Translation</strong></big>
+
+              For each page, please make sure to integrate the content of the primary language before switching to the translation of the secondary language.
+              This ensures the content is duplicated and simplifies the translation process.
+
+
               <big><strong>Saving & publishing</strong></big>
 
               Make sure to save your changes Cmd + S or click on the "Save" button in the top right corner.
