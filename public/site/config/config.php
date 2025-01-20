@@ -78,23 +78,8 @@ return [
     //     'active' => true
     //   ]
     // ],
-
-    // 'bnomei.robots-txt.sitemap' => './sitemap.xml',
-    // 'bnomei.robots-txt.groups' => [
-    //     '*' => [
-    //         'disallow' => [
-    //             '/kirby/',
-    //             '/site/',
-    //         ],
-    //         'allow' => [
-    //             '/media/',
-    //         ]
-    //     ]
-    // ],
-
-    'omz13.xmlsitemap' => [
-        'cacheTTL' => 0,
-    ],
+    'isaactopo.xmlsitemap.ignore' => ['error', 'legal'],
+    'isaactopo.xmlsitemap.includeImages' => true,
 
     'smartypants' => true,
     'schnti.cachebuster.active' => true,

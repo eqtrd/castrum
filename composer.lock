@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9de82b0709b1fa8bde6949c7f4c9637",
+    "content-hash": "dc954c7b1f3c99e2e8c946cf10650717",
     "packages": [
         {
             "name": "bnomei/kirby3-janitor",
@@ -960,6 +960,111 @@
                 }
             ],
             "time": "2024-07-18T11:15:46+00:00"
+        },
+        {
+            "name": "isaactopo/xmlsitemap",
+            "version": "0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/isaactopo/xmlsitemap.git",
+                "reference": "eaa208b0c49f47953329a1baeb955a015caddd77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/isaactopo/xmlsitemap/zipball/eaa208b0c49f47953329a1baeb955a015caddd77",
+                "reference": "eaa208b0c49f47953329a1baeb955a015caddd77",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Isaac Bordons Soler",
+                    "email": "isaac@topo.bz"
+                }
+            ],
+            "description": "Kirby 3 Multilanguage XML Sitemap",
+            "support": {
+                "issues": "https://github.com/isaactopo/xmlsitemap/issues",
+                "source": "https://github.com/isaactopo/xmlsitemap/tree/0.2.2"
+            },
+            "time": "2023-03-22T10:35:39+00:00"
+        },
+        {
+            "name": "junohamburg/kirby-language-selector",
+            "version": "1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/junohamburg/kirby-language-selector.git",
+                "reference": "5285cc4eebac0be281d2329a01c3bbd50f419250"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/junohamburg/kirby-language-selector/zipball/5285cc4eebac0be281d2329a01c3bbd50f419250",
+                "reference": "5285cc4eebac0be281d2329a01c3bbd50f419250",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JUNO",
+                    "email": "github@juno-hamburg.com"
+                }
+            ],
+            "description": "Kirby Language Selector",
+            "support": {
+                "issues": "https://github.com/junohamburg/kirby-language-selector/issues",
+                "source": "https://github.com/junohamburg/kirby-language-selector/tree/1.1.9"
+            },
+            "time": "2024-02-12T09:19:04+00:00"
+        },
+        {
+            "name": "junohamburg/kirby-reload-on-save",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/junohamburg/kirby-reload-on-save.git",
+                "reference": "cf3f924b5dfb7492d428075eefe31087e30c5152"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/junohamburg/kirby-reload-on-save/zipball/cf3f924b5dfb7492d428075eefe31087e30c5152",
+                "reference": "cf3f924b5dfb7492d428075eefe31087e30c5152",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JUNO",
+                    "email": "github@juno-hamburg.com"
+                }
+            ],
+            "description": "Kirby Reload On Save",
+            "support": {
+                "issues": "https://github.com/junohamburg/kirby-reload-on-save/issues",
+                "source": "https://github.com/junohamburg/kirby-reload-on-save/tree/1.0.3"
+            },
+            "time": "2024-02-08T15:32:59+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
