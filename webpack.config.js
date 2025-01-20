@@ -7,7 +7,7 @@ const commonConfig = {
   context: path.resolve(__dirname, "./src/"),
   entry: {
     'bundle': ["./js/index.js", "./scss/application.scss"],
-    'panel': ["./js/panel.js", "./scss/_panel/panel.scss"],
+    'panel': ["./js/panel.js", "./scss/panel/panel.scss"],
   },
   output: {
     path: path.resolve(__dirname, "./public/assets/"),
