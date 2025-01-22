@@ -1,6 +1,5 @@
 # Root Dir.
 .DS_Store
-.editorconfig
 .idea
 node_modules
 

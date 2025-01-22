@@ -1,0 +1,5 @@
+root = true
+
+[src/scss/config/config.scss]
+indent_style = space  # ou tab
+indent_size = 2       # ou toute autre taille
