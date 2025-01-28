@@ -4,5 +4,5 @@ return [
     'debug' => true,
     'url' => "/",
     'schnti.cachebuster.active' => false,
-    'env' => 'prod',
+    'env' => 'dev',
 ];
