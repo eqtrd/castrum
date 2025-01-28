@@ -1,6 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const merge = require("webpack-merge");
+const {merge} = require("webpack-merge");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 const commonConfig = {
@@ -10,22 +10,22 @@ const commonConfig = {
     'panel': ["./js/panel.js", "./scss/panel/panel.scss"],
   },
   output: {
-    path: path.resolve(__dirname, "./public/assets/"),
-    publicPath: "/assets/",
+    path: path.resolve(__dirname, "./assets/"),
+    publicPath: "/public",
     filename: "./js/[name].js",
     assetModuleFilename: "./",
   },
   devServer: {
     hot: true,
-    /* server:{
-       type: 'https',
-       options: {
-         requestCert: true,
-       },
-     },*/
+    open: false,
+    host: '0.0.0.0',  // Permet d'écouter sur toutes les interfaces réseau
+    port: 8080,        // Le port que tu veux utiliser
+    client: {
+      overlay: true,
+    },
     watchFiles: ['www/site/*.php'],
     static: {
-      directory: path.resolve('./public'),
+      directory: path.resolve('./public/assets'),
       watch: {
         ignored: ['**/*.json','**/*.sess', '**/*.jpg', '**/*.webp','**/*.png', '**/*.gif'],
       },
@@ -100,7 +100,7 @@ const commonConfig = {
     new MiniCssExtractPlugin({
       filename: "./css/[name].css",
     }),
-    new BrowserSyncPlugin({
+    /*new BrowserSyncPlugin({
       host: "dev.local",
       watch: false,
       port: 3000,
@@ -108,7 +108,7 @@ const commonConfig = {
       proxy: path.basename(__dirname)+".test",
       open: "external",
       reload: false,
-    }),
+    }),*/
   ],
 };
 

@@ -1,5 +1,5 @@
-var fontconvert = require('fontconvert-tool');
-const path = require("path");
+import fontconvert from 'fontconvert-tool';
+import path from "path";
 
 fontconvert.convertFonts('./src/fonts', './src/fonts', [], {
 

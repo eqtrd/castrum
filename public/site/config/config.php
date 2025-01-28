@@ -1,5 +1,6 @@
 <?php
 
+// Définir des variables d'environnement dans la configuration de Kirby
 return [
 
 // __________________________________________________________ //
@@ -10,6 +11,7 @@ return [
         'js'  => 'assets/js/panel.js',
     ],
     'debug' => false,
+    'env' => 'prod',
 
 
 // __________________________________________________________ //

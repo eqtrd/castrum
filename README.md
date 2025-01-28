@@ -16,3 +16,6 @@ composer install && composer update
 git rm -r --cached .
 
 git add .
+
+### Update NPM Packages
+ncu -u

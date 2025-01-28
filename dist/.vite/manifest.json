@@ -1,0 +1,71 @@
+{
+  "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/lazysizes.js?commonjs-es-import": {
+    "file": "kirby-starterkit-eqtrd5.js",
+    "name": "_virtual/lazysizes",
+    "src": "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/lazysizes.js?commonjs-es-import",
+    "imports": [
+      "node_modules/lazysizes/lazysizes.js"
+    ]
+  },
+  "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/lazysizes.js?commonjs-module": {
+    "file": "kirby-starterkit-eqtrd8.js",
+    "name": "_virtual/lazysizes",
+    "src": "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/lazysizes.js?commonjs-module"
+  },
+  "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js?commonjs-es-import": {
+    "file": "kirby-starterkit-eqtrd6.js",
+    "name": "_virtual/ls.parent-fit",
+    "src": "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js?commonjs-es-import",
+    "imports": [
+      "node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js"
+    ]
+  },
+  "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js?commonjs-module": {
+    "file": "kirby-starterkit-eqtrd10.js",
+    "name": "_virtual/ls.parent-fit",
+    "src": "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js?commonjs-module"
+  },
+  "node_modules/lazysizes/lazysizes.js": {
+    "file": "kirby-starterkit-eqtrd7.js",
+    "name": "node_modules/lazysizes/lazysizes",
+    "src": "node_modules/lazysizes/lazysizes.js",
+    "imports": [
+      "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/lazysizes.js?commonjs-module"
+    ]
+  },
+  "node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js": {
+    "file": "kirby-starterkit-eqtrd9.js",
+    "name": "node_modules/lazysizes/plugins/parent-fit/ls.parent-fit",
+    "src": "node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js",
+    "imports": [
+      "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js?commonjs-module",
+      "node_modules/lazysizes/lazysizes.js"
+    ]
+  },
+  "src/js/_modules/home.js": {
+    "file": "kirby-starterkit-eqtrd4.js",
+    "name": "js/_modules/home",
+    "src": "src/js/_modules/home.js"
+  },
+  "src/js/_modules/website.js": {
+    "file": "kirby-starterkit-eqtrd3.js",
+    "name": "js/_modules/website",
+    "src": "src/js/_modules/website.js"
+  },
+  "src/js/index.js": {
+    "file": "kirby-starterkit-eqtrd.js",
+    "name": "index",
+    "src": "src/js/index.js",
+    "isEntry": true,
+    "imports": [
+      "src/js/_modules/website.js",
+      "src/js/_modules/home.js",
+      "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/lazysizes.js?commonjs-es-import",
+      "/Users/Elie/Sites/kirby-eqtrd/node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js?commonjs-es-import"
+    ]
+  },
+  "style.css": {
+    "file": "kirby-starterkit-eqtrd.css",
+    "src": "style.css"
+  }
+}

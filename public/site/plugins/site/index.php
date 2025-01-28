@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/helpers.php';
+require __DIR__ . '/assets.php';
 
 Kirby::plugin('eqtrd/site', [
     'fieldMethods' => include __DIR__ . '/fieldMethods.php',

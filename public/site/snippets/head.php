@@ -57,11 +57,8 @@
   <meta name="twitter:description" content="<?= $page->createDescription() ?>">
   <meta name="twitter:image" content="<?= $page->createImage() ?>">
 
-  <?php if ($kirby->option('debug') == true) : ?>
-    <?= css('http://dev.local:8080/assets/css/bundle.css')?>
-  <?php else: ?>
-    <?= css('assets/css/bundle.css') ?>
-  <?php endif; ?>
+
+  <?= LoadAssets::getCSS('src/scss/application.scss') ?>
 
 
 </head>

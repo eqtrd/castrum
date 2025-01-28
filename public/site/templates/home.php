@@ -4,4 +4,4 @@
 <p>this website is auto deployed</p>
 <a href="#">This is a link</a>
 
-<?php snippet("foot")?>
+<?php snippet("foot") ?>
