@@ -11,6 +11,7 @@ browserSync.init({
     open: 'external',
     port: 3000, // BrowserSync runs on this port
     watch: false,
+    reloadDelay: 200, // Avoid breaking styles injection
     middleware: [
         function (req, res, next) {
             // Set a custom header for the server

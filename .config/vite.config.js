@@ -16,10 +16,6 @@ export default defineConfig({
     },
     base: '/assets/',
     build: {
-        lib: {
-            entry: 'src/js/index.js',
-            formats: ['es'],
-        },
         copyPublicDir: false,
         manifest: true,
         rollupOptions: {
@@ -27,6 +23,18 @@ export default defineConfig({
                 index: "src/js/index.js",
                 styles: "src/scss/application.scss",
             },
+            output:{
+                assetFileNames: ({ name }) => {
+                    if (/\.(woff|woff2|eot|ttf|otf)$/.test(name ?? '')) {
+                        return 'fonts/[name][extname]';
+
+                    }
+                    if (/\.(png|jpe?g|gif|svg|webp)$/.test(name ?? '')) {
+                        return 'images/[name][extname]';
+                    }
+                    return '[name]-[hash][extname]';
+                }
+            }
         },
         outDir: 'public/assets', // Le dossier de sortie racine
         assetsDir: '', // Indique que les polices doivent aller dans 'assets/fonts'
