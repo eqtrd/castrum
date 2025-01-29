@@ -7,14 +7,15 @@ git remote rm origin
 
 git remote add origin https://github.com/eqtrd/REPOSITORY.git
 
+git tag -a vX.X.X -m "Release vX.X.X"
+git push origin vX.X.X
+
 ### Init Project
 npm install && npm update
-
 composer install && composer update
 
 ### Update Gitignore
 git rm -r --cached .
-
 git add .
 
 ### Update NPM Packages
