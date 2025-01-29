@@ -80,11 +80,11 @@ return [
     //     'active' => true
     //   ]
     // ],
+
     'isaactopo.xmlsitemap.ignore' => ['error', 'legal'],
     'isaactopo.xmlsitemap.includeImages' => true,
 
     'smartypants' => true,
-    'schnti.cachebuster.active' => true,
 
     'ready' => function ($kirby) {
         return [
