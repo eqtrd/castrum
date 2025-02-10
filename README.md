@@ -20,3 +20,12 @@ git add .
 
 ### Update NPM Packages
 ncu -u
+
+### Create Content Folder
+
+Create a content folder in public/content with this structure
+
+content
+  —— home
+    ——— home.txt
+  site.txt
