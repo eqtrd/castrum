@@ -25,7 +25,7 @@ ncu -u
 
 Create a content folder in public/content with this structure
 
-content
-  —— home
-    ——— home.txt
-  site.txt
+public/content
+├── home
+│   ├── home.txt
+└── site.txt
