@@ -4,7 +4,7 @@ class LoadAssets
     public static function getCSS($url)
     {
         if (c::get('env') === "dev") :
-            return css("http://localhost:5173/" . $url);
+            return css("http://localhost:5173/assets/" . $url);
         endif;
         $manifestPath = asset('/assets/.vite/manifest.json')->root();
         $manifest = json_decode(F::read($manifestPath), true);

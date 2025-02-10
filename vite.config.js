@@ -1,6 +1,6 @@
 import path from 'path';
 import { defineConfig } from 'vite';
-import liveReload from 'vite-plugin-live-reload'
+import liveReload from 'vite-plugin-live-reload';
 import { resolve } from 'node:path'
 
 export default defineConfig({

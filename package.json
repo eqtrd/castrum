@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "browsersync": "",
-    "dev": "APP_ENV=dev vite --config .config/vite.config.js & wait-on tcp:localhost:5173 && node --no-warnings .config/browsersync.js",
+    "dev": "APP_ENV=dev vite & wait-on tcp:localhost:5173 && node --no-warnings browsersync.js",
     "server": "APP_ENV=dev php -S localhost:3000 -t www www/kirby/router.php",
-    "build": "vite build --config .config/vite.config.js",
+    "build": "vite build",
     "fonts": "node .config/fonts.config.js",
     "preview": "npm run build && npm run server"
   },
