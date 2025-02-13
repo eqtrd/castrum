@@ -10,7 +10,10 @@ export default defineConfig({
         ]),
     ],
     server:{
-        origin: 'http://localhost:5173',
+        origin: 'http://dev.local:5173', // Ajoute le protocole
+        host: '0.0.0.0', // Permet d'accepter les connexions externes
+        port: 5173,
+        strictPort: true,
         cors: true,
         open: false,
     },

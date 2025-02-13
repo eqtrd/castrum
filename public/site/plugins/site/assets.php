@@ -4,7 +4,7 @@ class LoadAssets
     public static function getCSS($url)
     {
         if (c::get('env') === "dev") :
-            return css("http://localhost:5173/assets/" . $url);
+            return css("http://dev.local:5173/assets/" . $url);
         endif;
         $manifestPath = asset('/assets/.vite/manifest.json')->root();
         $manifest = json_decode(F::read($manifestPath), true);
@@ -16,7 +16,7 @@ class LoadAssets
     public static function getJS($url)
     {
         if (c::get('env') === "dev") :
-            return js("http://localhost:5173/assets/@vite/client", ['type' => 'module']) . js("http://localhost:5173/assets/" . $url, ['type' => 'module']);
+            return js("http://dev.local:5173/assets/@vite/client", ['type' => 'module']) . js("http://dev.local:5173/assets/" . $url, ['type' => 'module']);
         endif;
         $manifestPath = asset('/assets/.vite/manifest.json')->root();
         $manifest = json_decode(F::read($manifestPath), true);
