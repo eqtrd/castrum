@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import liveReload from 'vite-plugin-live-reload';
 import { resolve } from 'node:path'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
     plugins: [
         liveReload([
             path.resolve(__dirname, 'public/**/*.php'), // Corrected path
@@ -18,9 +18,13 @@ export default defineConfig({
         open: false,
     },
     base: '/assets/',
+    css: {
+        devSourcemap: mode === 'development', // Enable CSS/SCSS source maps only in dev
+    },
     build: {
         copyPublicDir: false,
         manifest: true,
+        sourcemap: mode === 'development',
         rollupOptions: {
             input: {
                 index: "src/js/index.js",
@@ -45,4 +49,4 @@ export default defineConfig({
         assetsDir: '', // Indique que les polices doivent aller dans 'assets/fonts'
         emptyOutDir: true,
     },
-});
+}));
