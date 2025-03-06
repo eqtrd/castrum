@@ -31,6 +31,15 @@
 #            ${{ runner.os }}-build-
 #            ${{ runner.os }}-
 #
+#      - name: Install Composer dependencies (if needed)
+#        run: |
+#          if [ -f "composer.json" ]; then
+#            if [ ! -d "vendor" ] || ! composer check-platform-reqs; then
+#              composer install --no-dev --no-interaction --prefer-dist
+#            else
+#              echo "Composer dependencies are already installed and up to date."
+#            fi
+#          fi
 #      - name: Set up Node.js
 #        uses: actions/setup-node@v4
 #        with:
@@ -38,6 +47,11 @@
 #
 #      - name: Install dependencies
 #        run: npm install
+#
+#      - name: Clean assets folder
+#        run: |
+#          rm -rf public/assets/*.css
+#          rm -rf public/assets/*.js
 #
 #      - name: Build assets
 #        run: npm run build # Assurez-vous que ce script est défini dans votre package.json pour lancer Webpack

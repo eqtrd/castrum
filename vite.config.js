@@ -32,8 +32,8 @@ export default defineConfig(({ mode }) => ({
                 panel: "src/scss/panel/panel.scss"
             },
             output:{
-                entryFileNames: '[name].js',
-                chunkFileNames: '[name].js',
+                entryFileNames: '[name]-[hash].js',
+                chunkFileNames: '[name]-[hash].js',
                 assetFileNames: ({ name }) => {
                     if (/\.(woff|woff2|eot|ttf|otf)$/.test(name ?? '')) {
                         return 'fonts/[name][extname]';
@@ -41,7 +41,10 @@ export default defineConfig(({ mode }) => ({
                     if (/\.(png|jpe?g|gif|svg|webp)$/.test(name ?? '')) {
                         return 'images/[name][extname]';
                     }
-                    return '[name][extname]';
+                    if (/\.css$/.test(name ?? '')) {
+                        return '[name]-[hash][extname]';
+                    }
+                    return '[name]-[hash][extname]';
                 }
             }
         },
