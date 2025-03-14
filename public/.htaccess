@@ -36,6 +36,9 @@ RewriteRule ^content/(.*) index.php [L]
 # block all files in the site folder from being accessed directly
 RewriteRule ^site/(.*) index.php [L]
 
+# block all files in the vendor folder from being accessed directly
+RewriteRule ^vendor/(.*) index.php [L]
+
 # block direct access to Kirby and the Panel sources
 RewriteRule ^vendor/getkirby/cms/(.*) index.php [L]
 
