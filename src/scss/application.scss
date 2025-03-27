@@ -9,7 +9,10 @@
 @use "partials/functions";
 @use "partials/base";
 @use "partials/fonts";
+@use "partials/lazysizes";
 
 // IMPORT MODULES
 @use "modules/init";
 
+// IMPORT TEMPLATES
+@use "templates/home";

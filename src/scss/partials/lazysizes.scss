@@ -1,4 +1,4 @@
-@use "../_config/config" as *;
+@use "../config/config" as *;
 
 body{
   opacity: 0;
@@ -6,14 +6,16 @@ body{
 
 body.loaded{
   opacity: 1;
-  transition: $transition-duration-default $transition-timing-default $transition-delay-default;
+  transition: opacity map-get($transition, duration) map-get($transition, timing);
 }
 
 .lazyload,
 .lazyloading {
   opacity: 0;
+  visibility: hidden;
 }
 .lazyloaded {
   opacity: 1;
-  transition: opacity $transition-duration-default;
+  visibility: visible;
+  transition: opacity map-get($transition, duration) map-get($transition, timing);
 }
