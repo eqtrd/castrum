@@ -1,6 +1,10 @@
 <?php snippet("head")?>
 
-<h1><?= $page->title()?></h1>
+<div class="container">
+    <div class="main-text markdown">
+        <?= $page->mainText()->kirbytext() ?>
+    </div>
+</div>
 
 <?php snippet("foot")?>
 

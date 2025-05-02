@@ -41,6 +41,9 @@ export default defineConfig(({ mode }) => ({
                     if (/\.(png|jpe?g|gif|svg|webp)$/.test(name ?? '')) {
                         return 'images/[name][extname]';
                     }
+                    if (name.endsWith('panel.css')) {
+                        return '[name][extname]'; // no hash for panel.css
+                    }
                     if (/\.css$/.test(name ?? '')) {
                         return '[name]-[hash][extname]';
                     }

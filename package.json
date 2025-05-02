@@ -15,15 +15,15 @@
   "author": "eqtrd",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "browser-sync": "^3.0.3",
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
     "fantasticon": "^3.0.0",
     "fontconvert-tool": "^1.1.2",
     "path": "^0.12.7",
-    "sass": "^1.83.4",
-    "vite": "^6.0.11",
+    "sass": "^1.87.0",
+    "vite": "^6.3.2",
     "vite-plugin-live-reload": "^3.0.4",
-    "wait-on": "^8.0.2"
+    "wait-on": "^8.0.3"
   },
   "browserslist": [
     "edge >= 16",
@@ -45,6 +45,10 @@
     ]
   },
   "dependencies": {
+    "alpinejs": "^3.14.9",
+    "flickity": "^3.0.0",
+    "flickity-fade": "^2.0.0",
+    "gsap": "^3.13.0",
     "imagesloaded": "^5.0.0",
     "jquery": "^3.7.1",
     "lazysizes": "^5.3.2"

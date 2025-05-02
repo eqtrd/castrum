@@ -1,5 +1,6 @@
 type: files
 layout: cards
+uploads: false
 image:
   back: lightgrey
 

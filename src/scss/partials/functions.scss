@@ -91,6 +91,10 @@
     --color-#{$color}: #{$value};
   }
 
+  @each $indent, $value in $indents {
+    --indent-#{$indent}: #{$value};
+  }
+
   @each $size, $value in $margin {
     --margin-#{$size}: calc(var(--base-space) * #{$value});
   }

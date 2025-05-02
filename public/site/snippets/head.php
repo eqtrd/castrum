@@ -63,4 +63,5 @@
 
 </head>
 <body id="<?= $page->uid()?>" data-template="<?= $page->template()?>">
+<?php snippet('components/header') ?>
 <main class="main">

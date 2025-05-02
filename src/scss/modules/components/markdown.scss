@@ -1,0 +1,25 @@
+@use "../../partials/functions" as *;
+
+.markdown{
+  margin-bottom: 0.45em;
+  h3{
+    margin-bottom: 1em;
+  }
+  p{
+    margin-bottom: 0.55em;
+  }
+  em{
+    text-indent: 1em;
+  }
+
+  ul li p {
+    text-indent: calc(var(--indent-default) * -1);
+    margin-left: var(--indent-default); /* Optional: keeps the rest of the paragraph aligned */
+  }
+
+
+
+
+
+
+}

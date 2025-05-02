@@ -5,9 +5,31 @@ $fontsize: (
       lh: 14px,
       ls: "normal",
     ),
-    md: (
-      fs: 18px,
-      lh: 24px,
+    md:(
+      fs: 24px,
+      lh: 30px,
+      ls: "normal",
+    ),
+    lg: (
+      fs: 26px,
+      lh: 32px,
+      ls: "normal",
+    ),
+  ),
+  small: (
+    sm: (
+      fs: 12px,
+      lh: 14px,
+      ls: "normal",
+    ),
+    md:(
+      fs: 14px,
+      lh: 18px,
+      ls: "normal",
+    ),
+    lg: (
+      fs: 16px,
+      lh: 20px,
       ls: "normal",
     ),
   ),
@@ -22,22 +44,28 @@ $margin: (
 $colors: (
   text: black,
   link: black,
-  link-hover: blue,
+  link-hover: #959490,
   bg: white,
 );
 
 $fonts: (
   main: (
-    name: Helvetica,
+    name: martina-plantijn-regular,
     fallback: "Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif",
-    withFile: false,
+    withFile: true,
+  ),
+  italic: (
+    name: martina-plantijn-italic,
+    fallback: "Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif",
+    withFile: true,
   ),
 );
 
 $breakpoints: (
   xs: 0px,
-  sm: 576px,
-  md: 1024px,
+  sm: 769px,
+  md: 1529px,
+  lg: 1729px,
 );
 
 $transition: (
@@ -45,4 +73,8 @@ $transition: (
   duration: 0.3s,
   timing: cubic-bezier(0.7, 0, 0.3, 1),
   delay: 0s,
+);
+
+$indents: (
+  default: 1.1em,
 );

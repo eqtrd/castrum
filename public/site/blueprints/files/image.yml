@@ -1,7 +1,7 @@
 title: Image
 accept:
   extension: jpg, png
-  maxsize: 10485760
+#  maxsize: 10485760
 
 create:
   width: 2500
@@ -9,3 +9,7 @@ create:
 
 
 fields:
+  caption:
+    label: Caption
+    extends: fields/markdown
+    help: Optional caption for the image

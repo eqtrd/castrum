@@ -13,6 +13,11 @@
 
 // IMPORT MODULES
 @use "modules/init";
+@use "modules/components/grid";
+@use "modules/components/markdown";
+@use "modules/components/header";
+@use "modules/components/slideshow";
 
 // IMPORT TEMPLATES
 @use "templates/home";
+@use "templates/about";

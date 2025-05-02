@@ -1,0 +1,39 @@
+@use '../partials/functions' as *;
+
+
+.page-submenu{
+  position: sticky;
+  top: 0;
+}
+
+.main-image{
+  margin-bottom: 6rem;
+  margin-top: 0.2em;
+}
+.section.text-section{
+  padding-top: 0.8em;
+  position: relative;
+  margin-bottom: 8.45em;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  .image-cover{
+    position: absolute;
+    width: 10.2vw;
+    left: calc(-10.2vw - 50px);
+    margin-top: 0.2em;
+    @include notouch(){
+      &:hover{
+        &:after{
+          display: inline-block;
+          content:"← →";
+          transform: rotate(-45deg);
+          font-size: 0.583em;
+          letter-spacing: -0.08em;
+        }
+      }
+    }
+
+  }
+}
+

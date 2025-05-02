@@ -1,0 +1,25 @@
+.main-menu{
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.main-menu ul{
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: start;
+  padding: 0.55em 1em;
+  gap: 1em;
+  li{
+    display: inline-block;
+  }
+  li:nth-of-type(5){
+    margin-left: auto;
+  }
+}
+
+.site-title{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
