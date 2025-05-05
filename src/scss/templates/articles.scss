@@ -16,7 +16,7 @@
     top: 0.25em;
   }
   .images-gallery{
-    margin-top: 6em;
+    margin-top: 5.4em;
   }
 }
 
@@ -44,5 +44,14 @@
 
 .markdown .filter-submenu a:not([href*=mailto]){
   text-decoration: none;
+}
+
+.item-table-more button{
+  margin-top: 2.35em;
+  &:before{
+    content: '+';
+    display: inline-block;
+    margin-right: 0.5em;
+  }
 }
 
