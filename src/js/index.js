@@ -10,6 +10,8 @@ import {gsap} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import {Slideshow} from "./_modules/slideshow.js";
+import {FilterSubMenu} from "./_modules/filterSubMenu.js";
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -61,5 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     Slideshow();
+    FilterSubMenu();
 
 });

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df9dcd6593bf414e81b2518d84bb8ac2",
+    "content-hash": "81488d50bf928507c0328f0a46829196",
     "packages": [
         {
             "name": "bnomei/kirby3-janitor",
@@ -1525,6 +1525,51 @@
                 }
             ],
             "time": "2024-07-20T21:41:07+00:00"
+        },
+        {
+            "name": "plain/kirby-column-blocks",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/plain-solutions-gmbh/kirby-column-blocks.git",
+                "reference": "97d96b6b561c454dfe89fda78b3f626d76d42a16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/plain-solutions-gmbh/kirby-column-blocks/zipball/97d96b6b561c454dfe89fda78b3f626d76d42a16",
+                "reference": "97d96b6b561c454dfe89fda78b3f626d76d42a16",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "title": "Column Block"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Gsponer",
+                    "email": "kirby@plain-solutions.net"
+                }
+            ],
+            "description": "Use columns in block fields based on the layout field.",
+            "homepage": "https://plain-solutions.net/801524",
+            "support": {
+                "issues": "https://github.com/plain-solutions-gmbh/kirby-column-blocks/issues",
+                "source": "https://github.com/plain-solutions-gmbh/kirby-column-blocks/tree/1.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/donate/?hosted_button_id=ZMV4BV3X7EUT4",
+                    "type": "PayPal"
+                }
+            ],
+            "time": "2025-03-24T16:01:18+00:00"
         },
         {
             "name": "psr/http-client",

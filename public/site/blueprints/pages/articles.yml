@@ -1,0 +1,40 @@
+title: Articles Page
+
+columns:
+  - width: 2/3
+    sections:
+        content:
+          type: fields
+          fields:
+            mainImage:
+              extends: fields/files
+              max: 1
+            categories:
+              label: Categories
+              type: tags
+        draft:
+          type: pages
+          status: draft
+          template:
+            - articles-single
+        published:
+          type: pages
+          status: published
+          template:
+            - articles-single
+
+        gallery:
+          type: fields
+          fields:
+            imagesGallery:
+              extends: fields/gallery
+          # Define the fields for the content section here
+
+        # Define the fields for the content section here
+
+  - width: 1/3
+    sections:
+      images: sections/side-images
+      gif:    sections/side-gif
+      videos: sections/side-videos # This will bring in all the sections defined in allfiles.yml
+      files:  sections/side-files  # This will bring in all the sections defined in allfiles.yml

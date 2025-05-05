@@ -17,9 +17,11 @@
 @use "modules/components/markdown";
 @use "modules/components/header";
 @use "modules/components/slideshow";
+@use "modules/components/images-gallery";
 
 // IMPORT TEMPLATES
 @use "templates/home";
 @use "templates/about";
 @use "templates/visits";
 @use "templates/programmation";
+@use "templates/articles";

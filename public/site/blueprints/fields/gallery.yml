@@ -1,0 +1,13 @@
+type: blocks
+label: Images Gallery
+fieldsets:
+  columns:
+    extends: blocks/columns
+    fields:
+      layout:
+        max: 1
+        layouts:
+          - "1/1"
+          - "1/2, 1/2"
+        fieldsets:
+          - image

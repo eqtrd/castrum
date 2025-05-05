@@ -1,0 +1,23 @@
+.block-type-columns{
+  margin-bottom: 207px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+.block-type-columns .grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.column[style="--columns:6"]{
+  grid-column: span 1;
+}
+
+.column[style="--columns:12"]{
+  grid-column: span 2;
+}
+
+.column[style="--columns:12"] picture.landscape.big{
+  width: 67%;
+  display: block;
+}

@@ -5,7 +5,7 @@
     <div>
         <div class="main-image">
             <?php if ($mainImage = $page->mainImage()->toFile()): ?>
-                <?= $mainImage->picture('m', true) ?>
+                <?= $mainImage->picture('m', true, ['big']) ?>
                 <h4 class="caption"><?= $mainImage->caption()?></h4>
             <?php endif; ?>
         </div>

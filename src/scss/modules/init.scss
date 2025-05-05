@@ -83,3 +83,13 @@ button{
   text-decoration: none;
   padding: 0;
 }
+
+/* —————————————————————————————————————————————————————————————
+        IMAGES
+———————————————————————————————————————————————————————————————— */
+
+picture.portrait.big{
+  max-width: 60%;
+  height: auto;
+  display: block;
+}
