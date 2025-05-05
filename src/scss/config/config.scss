@@ -33,6 +33,23 @@ $fontsize: (
       ls: "normal",
     ),
   ),
+  medium: (
+    sm: (
+      fs: 12px,
+      lh: 14px,
+      ls: "normal",
+    ),
+    md:(
+      fs: 19px,
+      lh: 25px,
+      ls: "normal",
+    ),
+    lg: (
+      fs: 19px,
+      lh: 25px,
+      ls: "normal",
+    ),
+  ),
 );
 
 $space: 8px;

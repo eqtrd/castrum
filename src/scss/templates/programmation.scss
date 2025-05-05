@@ -1,0 +1,51 @@
+@use '../partials/functions' as *;
+
+[data-template='programmation'] {
+  .section.text-section:first-of-type {
+    padding-top: 0;
+  }
+  .markdown{
+    margin-bottom: 0;
+  }
+  main{
+    padding-bottom: 1em;
+  }
+}
+
+.item-table{
+  border-top: 1px solid;
+}
+
+.item-table-item {
+  border-bottom: 1px solid;
+  padding: 0.5em 0;
+
+  .--grid-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+  }
+
+  .--type {
+    @include fs(medium);
+    margin-bottom: 0;
+  }
+
+  .--description {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .--more-content {
+    @include fs(medium);
+    margin-left: 25%;
+  }
+
+  .--collapse-text {
+    @include fs('medium');
+    p:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+}

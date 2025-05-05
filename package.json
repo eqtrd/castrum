@@ -45,6 +45,7 @@
     ]
   },
   "dependencies": {
+    "@alpinejs/collapse": "^3.14.9",
     "alpinejs": "^3.14.9",
     "flickity": "^3.0.0",
     "flickity-fade": "^2.0.0",

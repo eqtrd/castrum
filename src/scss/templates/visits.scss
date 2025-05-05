@@ -1,0 +1,16 @@
+
+
+[data-template='visits']{
+
+  .section.text-section{
+    margin-bottom: 3.25em;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  .tables{
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    margin-top: 1em;
+  }
+}

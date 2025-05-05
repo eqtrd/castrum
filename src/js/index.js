@@ -5,6 +5,7 @@ import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import '../scss/application.scss';
 
 import Alpine from 'alpinejs'
+import collapse from '@alpinejs/collapse';
 import {gsap} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -15,8 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     onLoading();
     loadPage();
 
+    Alpine.plugin(collapse);
     window.Alpine = Alpine
-    Alpine.start()
+    Alpine.start();
+
 
     gsap.registerPlugin(ScrollToPlugin,  ScrollTrigger);
 

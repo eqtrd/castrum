@@ -36,23 +36,23 @@
                         <?= $image->picture('l', true) ?>
                     <?php endif; ?>
                 </div>
-                <h2><?= $block->title() ?></h3>
+                <h2><?= $block->title() ?></h2>
                 <?= $block->mainText()->kt() ?>
             </div>
         <?php endforeach; ?>
     </div>
 </div>
 
-<div class="slideshow-container">
+<!--<div class="slideshow-container">
     <?php
-    $items = $page->sections()->toBlocks()
+/*    $items = $page->sections()->toBlocks()
         ->map(fn($block) => $block->image()->toFile()) // récupère le fichier image de chaque bloc
         ->filter(fn($file) => $file instanceof Kirby\Cms\File); // ne garde que les fichiers valides
-    ?>
+    */?>
 
-    <?php snippet("components/slideshow", ["items" => $items]) ?>
+    <?php /*snippet("components/slideshow", ["items" => $items]) */?>
 
-</div>
+</div>-->
 
 <?php snippet("foot") ?>
 

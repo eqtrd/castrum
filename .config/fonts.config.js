@@ -4,10 +4,10 @@ import path from "path";
 fontconvert.convertFonts('./src/fonts', './src/fonts', [], {
 
 
-    subset: [
+   /* subset: [
         'Basic Latin', 'Latin-1 Supplement', // Latin
-        'General Punctuation', 'Currency Symbols', 'Arrows', // Punctuation
-    ],
+        'General Punctuation', 'Currency Symbols', 'Arrows', 'Number Forms' // Punctuation
+    ],*/
     outTypes: ['woff', 'woff2', 'otf', 'svg'],
 });
 

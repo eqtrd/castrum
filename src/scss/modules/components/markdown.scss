@@ -1,15 +1,34 @@
 @use "../../partials/functions" as *;
+@use '../../modules/init';
 
 .markdown{
   margin-bottom: 0.45em;
-  h3{
-    margin-bottom: 1em;
-  }
   p{
     margin-bottom: 0.55em;
   }
   em{
     text-indent: 1em;
+  }
+  h2{
+    margin-bottom: 1em;
+  }
+  h3{
+    @include fs(medium);
+    margin-bottom: 0;
+  }
+  h4{
+    margin-top: 0.5em;
+    @include fs(small);
+    &:before{
+        content: "*";
+    }
+    &.caption:before{
+      content: '';
+    }
+  }
+
+  a:not([href*="mailto"]) {
+    @extend .underline;
   }
 
   ul li p {
@@ -17,7 +36,47 @@
     margin-left: var(--indent-default); /* Optional: keeps the rest of the paragraph aligned */
   }
 
+  .tables{
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    margin-top: 1em;
+  }
 
+  .tables[data-col='1/2']{
+    columns: 2;
+  }
+
+  .tables[data-col='2/2']{
+    thead tr th{
+      border: none;
+    }
+    tbody tr td:last-of-type{
+      text-align: left !important;
+    }
+  }
+
+  table:nth-of-type(odd){
+    margin-top: 0;
+  }
+
+  table{
+    font-variant-numeric: tabular-nums;
+    margin-top: calc(1.458em + 2px);
+    width: 100%;
+    break-inside: avoid;
+    border-spacing: 0;
+  }
+  thead th{
+    font-weight: normal;
+    border-bottom: 1px solid;
+  }
+  td{
+    width: 33.333%;
+    height: 1.458em;
+    border-bottom: 1px solid black;
+    &:after{
+      content: "\00a0";
+    }
+  }
 
 
 

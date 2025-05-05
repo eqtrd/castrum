@@ -62,6 +62,7 @@
 
 
 </head>
+<?php setlocale(LC_TIME, 'fr_FR.UTF-8');?>
 <body id="<?= $page->uid()?>" data-template="<?= $page->template()?>">
 <?php snippet('components/header') ?>
 <main class="main">

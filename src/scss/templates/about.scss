@@ -16,6 +16,10 @@
   margin-bottom: 8.45em;
   &:last-of-type{
     margin-bottom: 0;
+    min-height: calc((var(--vh) * 100) - var(--hh) - 0.45em);
+  }
+  &:first-of-type{
+    min-height: unset;
   }
   .image-cover{
     position: absolute;
