@@ -84,6 +84,14 @@ button{
   padding: 0;
 }
 
+.no-underline-no-hover{
+    text-decoration: none !important;
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
 /* —————————————————————————————————————————————————————————————
         IMAGES
 ———————————————————————————————————————————————————————————————— */

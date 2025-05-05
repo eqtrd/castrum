@@ -19,25 +19,20 @@ columns:
               value: "{{ item.value}}"
           articleType:
             label: Type
-            type: text
+            type: select
+            options:
+              image: Images
+              image+text: Images + Text
+              text: Text
           EventDescription:
             label: Description
             extends: fields/markdown
           EventText:
-            label: Texte
+            label: Abstract
             extends: fields/markdown
-          gallery:
-            type: blocks
-              fieldsets:
-                columns:
-                  extends: blocks/columns
-                  fields:
-                    layout:
-                      layouts:
-                        - "1/1"
-                        - "1/2, 1/2"
-                      fieldsets:
-                        - image
+          imagesGallery:
+            extends: fields/gallery
+            whenQuery: articleType = "image" || articleType = "image+text"
 
 
         # Define the fields for the content section here

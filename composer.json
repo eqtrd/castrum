@@ -32,7 +32,8 @@
     "junohamburg/kirby-language-selector": "^1.1",
     "isaactopo/xmlsitemap": "^0.2.2",
     "vlucas/phpdotenv": "^5.6",
-    "plain/kirby-column-blocks": "^1.2"
+    "plain/kirby-column-blocks": "^1.2",
+    "rasteiner/k3-whenquery": "^0.5.0"
   },
   "config": {
     "vendor-dir": "public/vendor",

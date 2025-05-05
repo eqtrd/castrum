@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81488d50bf928507c0328f0a46829196",
+    "content-hash": "687d860b116e414d81826f7e10e2a3ca",
     "packages": [
         {
             "name": "bnomei/kirby3-janitor",
@@ -1824,6 +1824,47 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rasteiner/k3-whenquery",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rasteiner/k3-whenquery.git",
+                "reference": "fe50f80d0e5ebac63afeb6e5dc1200ba7f9d9f37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rasteiner/k3-whenquery/zipball/fe50f80d0e5ebac63afeb6e5dc1200ba7f9d9f37",
+                "reference": "fe50f80d0e5ebac63afeb6e5dc1200ba7f9d9f37",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/cms": ">=3.8",
+                "getkirby/composer-installer": "^1.2"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "k3-whenquery"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Steiner",
+                    "email": "roman@toastlab.ch",
+                    "homepage": "https://getkirby.com/plugins/rasteiner"
+                }
+            ],
+            "description": "Conditionally show fields and sections. Better.",
+            "homepage": "https://getkirby.com/plugins/rasteiner/whenquery",
+            "support": {
+                "issues": "https://github.com/rasteiner/k3-whenquery/issues",
+                "source": "https://github.com/rasteiner/k3-whenquery/tree/0.5.0"
+            },
+            "time": "2023-05-23T14:11:37+00:00"
         },
         {
             "name": "seld/cli-prompt",

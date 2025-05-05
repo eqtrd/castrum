@@ -14,7 +14,7 @@ snippet("head") ?>
         </div>
     </div>
     <div class="main-text markdown">
-        <h2>Articles et comptes-rendus</h2>
+        <h2><?= $page->title() ?></h2>
         <div class="filter-submenu">
             <p><em>Filtres</em></p>
             <ul>
@@ -34,13 +34,15 @@ snippet("head") ?>
             <?php foreach ($firstItems as $item): ?>
                 <div class="item-table-item" x-data="{ open: false }"
                      data-category="<?= Str::slug($item->category()); ?>">
-                    <div class="--grid-row">
-                        <div class="--date"><?= $item->articleDate() ?></div>
-                        <div class="--content">
-                            <p class="--type"><?= $item->category() ?> | <em><?= $item->articleType() ?></em></p>
-                            <div class="--description"><?= $item->EventDescription()->kt() ?></div>
+                    <a class="no-underline-no-hover" href="<?= $item->url() ?>">
+                        <div class="--grid-row">
+                            <div class="--date"><?= $item->articleDate() ?></div>
+                            <div class="--content">
+                                <p class="--type"><?= $item->category() ?> | <em><?= $item->articleType() ?></em></p>
+                                <div class="--description"><?= $item->EventDescription()->kt() ?></div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="--more-content">
                         <button @click="open = !open">
                             <span x-text="open ? '−' : '+'"></span>
@@ -57,14 +59,17 @@ snippet("head") ?>
                     <?php foreach ($moreItems as $item): ?>
                         <div class="item-table-item" x-data="{ open: false }"
                              data-category="<?= Str::slug($item->category()); ?>">
-                            <div class="--grid-row">
-                                <div class="--date"><?= $item->articleDate() ?></div>
-                                <div class="--content">
-                                    <p class="--type"><?= $item->category() ?> | <em><?= $item->articleType() ?></em>
-                                    </p>
-                                    <div class="--description"><?= $item->EventDescription()->kt() ?></div>
+                            <a class="no-underline-no-hover" href="<?= $item->url() ?>">
+                                <div class="--grid-row">
+                                    <div class="--date"><?= $item->articleDate() ?></div>
+                                    <div class="--content">
+                                        <p class="--type"><?= $item->category() ?> |
+                                            <em><?= $item->articleType() ?></em>
+                                        </p>
+                                        <div class="--description"><?= $item->EventDescription()->kt() ?></div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <div class="--more-content">
                                 <button @click="open = !open">
                                     <span x-text="open ? '−' : '+'"></span>
