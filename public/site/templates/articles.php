@@ -36,7 +36,7 @@ snippet("head") ?>
                      data-category="<?= Str::slug($item->category()); ?>">
                     <a class="no-underline-no-hover" href="<?= $item->url() ?>">
                         <div class="--grid-row">
-                            <div class="--date"><?= $item->articleDate() ?></div>
+                            <div class="--date"><?= $item->articleDate()->toDate('Y') ?></div>
                             <div class="--content">
                                 <p class="--type"><?= $item->category() ?> | <em><?= $item->articleType() ?></em></p>
                                 <div class="--description"><?= $item->EventDescription()->kt() ?></div>

@@ -1,0 +1,24 @@
+@use '../partials/functions' as *;
+
+[data-template="articles-single"]{
+  main{
+    padding-bottom: 1em;
+  }
+  .images-gallery{
+    margin-top: 4.5em;
+  }
+}
+.header-info{
+  & > *{
+    @include fs(medium);
+  }
+  display: flex;
+  justify-content: center;
+  padding-left: 30%;
+  padding-right: 12.6%;
+  gap: 140px;
+  margin-bottom: 4em;
+  .-author{
+    max-width: 540px;
+  }
+}

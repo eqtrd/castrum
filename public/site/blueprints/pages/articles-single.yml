@@ -8,7 +8,8 @@ columns:
         fields:
           articleDate:
             label: Date
-            type: text
+            type: date
+            display: DD-MM-YYYY
           category:
             label: Category
             type: select
@@ -30,9 +31,16 @@ columns:
           EventText:
             label: Abstract
             extends: fields/markdown
+          author:
+            label: Author
+            extends: fields/markdown
+          articleTitle:
+            label: Article Title
+            extends: fields/markdown
           imagesGallery:
             extends: fields/gallery
             whenQuery: articleType = "image" || articleType = "image+text"
+
 
 
         # Define the fields for the content section here
